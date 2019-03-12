@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.26 Kernel Configuration
+# Linux/x86 4.19.28 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 8.3.1 20190308 gcc-8-branch@269475
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 8.3.1 20190312 gcc-8-branch@269618
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=80301
@@ -681,7 +681,7 @@ CONFIG_HAVE_KVM_IRQ_BYPASS=y
 CONFIG_VIRTUALIZATION=y
 CONFIG_KVM=y
 CONFIG_KVM_INTEL=y
-# CONFIG_KVM_AMD is not set
+CONFIG_KVM_AMD=m
 CONFIG_KVM_MMU_AUDIT=y
 CONFIG_VHOST_NET=y
 CONFIG_VHOST_SCSI=m
@@ -7297,5 +7297,5 @@ CONFIG_UNWINDER_FRAME_POINTER=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-3-19
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-3-19
+# FILEVER=/usr/share/kernel-config/base-4.19-3-22
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-3-22

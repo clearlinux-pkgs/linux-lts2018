@@ -5,7 +5,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.28
-Release:        9
+Release:        10
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -21,7 +21,7 @@ BuildRequires:  buildreq-kernel
 
 Requires: systemd-bin
 Requires: init-rdahead-extras
-Requires: %{name}-license = %{version}-%{release}
+Requires: linux-lts2018-license = %{version}-%{release}
 
 # don't strip .ko files!
 %global __os_install_post %{nil}
@@ -87,7 +87,7 @@ The Linux kernel.
 License:        GPL-2.0
 Summary:        The Linux kernel extra files
 Group:          kernel
-Requires:       %{name}-license = %{version}-%{release}
+Requires:       linux-lts2018-license = %{version}-%{release}
 
 %description extra
 Linux kernel extra files
@@ -111,8 +111,9 @@ Creates a cpio file with some module
 License:        GPL-2.0
 Summary:        The Linux kernel
 Group:          kernel
-Requires:       %{name} = %{version}-%{release}, %{name}-extra = %{version}-%{release}
-Requires:       %{name}-license = %{version}-%{release}
+Requires:       linux-lts2018 = %{version}-%{release}
+Requires:       linux-lts2018-extra = %{version}-%{release}
+Requires:       linux-lts2018-license = %{version}-%{release}
 
 %description dev
 Linux kernel build files and install script
