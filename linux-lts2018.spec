@@ -5,7 +5,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.28
-Release:        8
+Release:        9
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -21,6 +21,7 @@ BuildRequires:  buildreq-kernel
 
 Requires: systemd-bin
 Requires: init-rdahead-extras
+Requires: %{name}-license = %{version}-%{release}
 
 # don't strip .ko files!
 %global __os_install_post %{nil}
@@ -86,9 +87,17 @@ The Linux kernel.
 License:        GPL-2.0
 Summary:        The Linux kernel extra files
 Group:          kernel
+Requires:       %{name}-license = %{version}-%{release}
 
 %description extra
 Linux kernel extra files
+
+%package license
+Summary: license components for the linux package.
+Group: Default
+
+%description license
+license components for the linux package.
 
 %package cpio
 License:        GPL-2.0
@@ -103,6 +112,7 @@ License:        GPL-2.0
 Summary:        The Linux kernel
 Group:          kernel
 Requires:       %{name} = %{version}-%{release}, %{name}-extra = %{version}-%{release}
+Requires:       %{name}-license = %{version}-%{release}
 
 %description dev
 Linux kernel build files and install script
@@ -257,6 +267,10 @@ createCPIO %{ktarget} %{kversion}
 
 rm -rf %{buildroot}/usr/lib/firmware
 
+mkdir -p %{buildroot}/usr/share/package-licenses/linux-lts2018
+cp COPYING %{buildroot}/usr/share/package-licenses/linux-lts2018/COPYING
+cp -a LICENSES/* %{buildroot}/usr/share/package-licenses/linux-lts2018
+
 %files
 %dir /usr/lib/kernel
 %dir /usr/lib/modules/%{kversion}
@@ -271,6 +285,10 @@ rm -rf %{buildroot}/usr/lib/firmware
 %dir /usr/lib/kernel
 /usr/lib/kernel/System.map-%{kversion}
 /usr/lib/kernel/vmlinux-%{kversion}
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/linux-lts2018
 
 %files cpio
 /usr/lib/kernel/initrd-org.clearlinux.%{ktarget}.%{version}-%{release}
