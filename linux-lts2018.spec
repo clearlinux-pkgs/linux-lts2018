@@ -4,13 +4,13 @@
 #
 
 Name:           linux-lts2018
-Version:        4.19.30
-Release:        15
+Version:        4.19.31
+Release:        16
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.30.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.31.tar.xz
 Source1:        config
 Source2:        cmdline
 
@@ -120,7 +120,7 @@ Requires:       linux-lts2018-license = %{version}-%{release}
 Linux kernel build files and install script
 
 %prep
-%setup -q -n linux-4.19.30
+%setup -q -n linux-4.19.31
 
 #     000X  cve, bugfixes patches
 %patch0001 -p1
