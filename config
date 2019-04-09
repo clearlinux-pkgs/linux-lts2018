@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.28 Kernel Configuration
+# Linux/x86 4.19.34 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 8.3.1 20190312 gcc-8-branch@269618
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 8.3.1 20190409 gcc-8-branch@270218
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=80301
@@ -5736,7 +5736,7 @@ CONFIG_ACERHDF=m
 CONFIG_ALIENWARE_WMI=m
 CONFIG_ASUS_LAPTOP=m
 CONFIG_DELL_SMBIOS=m
-# CONFIG_DELL_SMBIOS_WMI is not set
+CONFIG_DELL_SMBIOS_WMI=y
 # CONFIG_DELL_SMBIOS_SMM is not set
 CONFIG_DELL_LAPTOP=m
 CONFIG_DELL_WMI=m
@@ -6515,7 +6515,7 @@ CONFIG_MISC_FILESYSTEMS=y
 # CONFIG_AFFS_FS is not set
 # CONFIG_ECRYPT_FS is not set
 # CONFIG_HFS_FS is not set
-# CONFIG_HFSPLUS_FS is not set
+CONFIG_HFSPLUS_FS=m
 # CONFIG_BEFS_FS is not set
 # CONFIG_BFS_FS is not set
 # CONFIG_EFS_FS is not set
@@ -7297,5 +7297,5 @@ CONFIG_UNWINDER_FRAME_POINTER=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-3-22
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-3-22
+# FILEVER=/usr/share/kernel-config/base-4.19-3-23
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-3-23
