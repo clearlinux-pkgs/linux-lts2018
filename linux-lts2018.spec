@@ -28,10 +28,10 @@ Requires: linux-lts2018-license = %{version}-%{release}
 %define debug_package %{nil}
 %define __strip /bin/true
 
-# kconfig: linux-4.19.14-682
-Patch0001: CVE-2019-9503.patch
+# kconfig: linux-5.0.17-757
 
 #    000X: cve, bugfixes patches
+Patch0001: CVE-2019-9503.patch
 
 #    00XY: Mainline patches, upstream backports
 Patch0011: 0011-drm-i915-cfl-Add-a-new-CFL-PCI-ID.patch
