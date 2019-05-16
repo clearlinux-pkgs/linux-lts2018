@@ -5,7 +5,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.43
-Release:        32
+Release:        33
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -29,6 +29,7 @@ Requires: linux-lts2018-license = %{version}-%{release}
 %define __strip /bin/true
 
 # kconfig: linux-4.19.14-682
+Patch0001: CVE-2019-9503.patch
 
 #    000X: cve, bugfixes patches
 
@@ -122,6 +123,7 @@ Linux kernel build files and install script
 %setup -q -n linux-4.19.43
 
 #     000X  cve, bugfixes patches
+%patch0001 -p1
 
 #     00XY  Mainline patches, upstream backports
 %patch0011 -p1
