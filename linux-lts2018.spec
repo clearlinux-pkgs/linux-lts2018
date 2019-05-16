@@ -28,7 +28,7 @@ Requires: linux-lts2018-license = %{version}-%{release}
 %define debug_package %{nil}
 %define __strip /bin/true
 
-# kconfig: linux-5.0.17-757
+# kconfig: linux-5.0.17-759
 
 #cve.start cve patches from 0001 to 009
 Patch0001: CVE-2019-9500.patch
