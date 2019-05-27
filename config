@@ -1,14 +1,15 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.45 Kernel Configuration
+# Linux/x86 4.19.55 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190522 gcc-9-branch@271495
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190621 gcc-9-branch@272564
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=90101
 CONFIG_CLANG_VERSION=0
+CONFIG_CC_HAS_ASM_GOTO=y
 CONFIG_IRQ_WORK=y
 CONFIG_BUILDTIME_EXTABLE_SORT=y
 CONFIG_THREAD_INFO_IN_TASK=y
@@ -814,7 +815,7 @@ CONFIG_BLK_DEV_BSGLIB=y
 CONFIG_BLK_DEV_INTEGRITY=y
 CONFIG_BLK_DEV_ZONED=y
 CONFIG_BLK_DEV_THROTTLING=y
-# CONFIG_BLK_DEV_THROTTLING_LOW is not set
+CONFIG_BLK_DEV_THROTTLING_LOW=y
 # CONFIG_BLK_CMDLINE_PARSER is not set
 CONFIG_BLK_WBT=y
 # CONFIG_BLK_CGROUP_IOLATENCY is not set
@@ -4782,6 +4783,7 @@ CONFIG_CHASH=m
 # CONFIG_CHASH_STATS is not set
 # CONFIG_CHASH_SELFTEST is not set
 CONFIG_DRM_NOUVEAU=m
+CONFIG_NOUVEAU_LEGACY_CTX_SUPPORT=y
 CONFIG_NOUVEAU_DEBUG=5
 CONFIG_NOUVEAU_DEBUG_DEFAULT=3
 # CONFIG_NOUVEAU_DEBUG_MMU is not set
@@ -7765,5 +7767,5 @@ CONFIG_UNWINDER_FRAME_POINTER=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-4-26
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-26
+# FILEVER=/usr/share/kernel-config/base-4.19-4-27
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-27
