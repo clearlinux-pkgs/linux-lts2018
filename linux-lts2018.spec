@@ -30,13 +30,13 @@ Requires: linux-lts2018-license = %{version}-%{release}
 
 # kconfig: linux-5.1.16-794
 
-#cve.start cve patches from 0001 to 009
+#cve.start cve patches from 0001 to 050
 Patch0001: CVE-2019-12455.patch
 Patch0002: CVE-2019-12456.patch
 Patch0003: CVE-2019-12379.patch
 #cve.end
 
-#mainline: Mainline patches, upstream backport and fixes from 0010 to 0099
+#mainline: Mainline patches, upstream backport and fixes from 0051 to 0099
 Patch0011: 0011-drm-i915-cfl-Add-a-new-CFL-PCI-ID.patch
 Patch0012: 0012-drm-i915-Redefine-some-Whiskey-Lake-SKUs.patch
 Patch0013: 0013-drm-i915-aml-Add-new-Amber-Lake-PCI-ID.patch
@@ -178,9 +178,6 @@ Linux kernel build files and install script
 #Serie2.patch.end
 
 cp %{SOURCE1} .
-
-cp -a /usr/lib/firmware/i915 firmware/
-cp -a /usr/lib/firmware/intel-ucode firmware/
 
 %build
 BuildKernel() {
