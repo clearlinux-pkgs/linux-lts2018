@@ -5,7 +5,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.68
-Release:        72
+Release:        73
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -37,7 +37,6 @@ Patch0003: CVE-2019-12379.patch
 #cve.end
 
 #mainline: Mainline patches, upstream backport and fixes from 0051 to 0099
-Patch0011: 0011-drm-i915-cfl-Add-a-new-CFL-PCI-ID.patch
 Patch0012: 0012-drm-i915-Redefine-some-Whiskey-Lake-SKUs.patch
 Patch0013: 0013-drm-i915-aml-Add-new-Amber-Lake-PCI-ID.patch
 #mainline.end
@@ -133,7 +132,6 @@ Linux kernel build files and install script
 #cve.patch.end
 
 #mainline.patch.start Mainline patches, upstream backport and fixes
-%patch0011 -p1
 %patch0012 -p1
 %patch0013 -p1
 #mainline.patch.end
