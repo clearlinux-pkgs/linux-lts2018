@@ -6,7 +6,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.71
-Release:        76
+Release:        77
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -29,7 +29,7 @@ Requires: linux-lts2018-license = %{version}-%{release}
 %define debug_package %{nil}
 %define __strip /bin/true
 
-# kconfig: linux-5.1.16-794
+# kconfig: linux-5.2.13-832
 
 #cve.start cve patches from 0001 to 050
 Patch0001: CVE-2019-12455.patch
