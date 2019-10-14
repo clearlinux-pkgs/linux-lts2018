@@ -4,7 +4,7 @@
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.2.1 20191011 gcc-9-branch@276857
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.2.1 20191013 gcc-9-branch@276932
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=90201
@@ -7842,3 +7842,8 @@ CONFIG_DEBUG_BOOT_PARAMS=y
 # CONFIG_UNWINDER_ORC is not set
 CONFIG_UNWINDER_FRAME_POINTER=y
 # CONFIG_UNWINDER_GUESS is not set
+
+
+# kernel-config sources:
+# FILEVER=/usr/share/kernel-config/base-4.19-4-37
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-37
