@@ -6,7 +6,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.82
-Release:        89
+Release:        90
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -70,6 +70,7 @@ Patch0124: 0124-use-lfence-instead-of-rep-and-nop.patch
 Patch0125: 0125-do-accept-in-LIFO-order-for-cache-efficiency.patch
 Patch0126: 0126-zero-extra-registers.patch
 Patch0127: 0127-locking-rwsem-spin-faster.patch
+Patch0128: 0128-add-workaround-for-binutils-optimization.patch
 #Serie.end
 
 #Serie1.name WireGuard
@@ -165,6 +166,7 @@ Linux kernel build files
 %patch0125 -p1
 %patch0126 -p1
 %patch0127 -p1
+%patch0128 -p1
 #Serie.patch.end
 
 #Serie1.patch.start
