@@ -38,8 +38,8 @@ Patch0003: CVE-2019-12379.patch
 #cve.end
 
 #mainline: Mainline patches, upstream backport and fixes from 0051 to 0099
-Patch0012: 0012-drm-i915-Redefine-some-Whiskey-Lake-SKUs.patch
-Patch0013: 0013-drm-i915-aml-Add-new-Amber-Lake-PCI-ID.patch
+Patch0051: 0012-drm-i915-Redefine-some-Whiskey-Lake-SKUs.patch
+Patch0052: 0013-drm-i915-aml-Add-new-Amber-Lake-PCI-ID.patch
 #mainline.end
 
 #Serie.clr 01XX: Clear Linux patches
@@ -134,8 +134,8 @@ Linux kernel build files
 #cve.patch.end
 
 #mainline.patch.start Mainline patches, upstream backport and fixes
-%patch0012 -p1
-%patch0013 -p1
+%patch0051 -p1
+%patch0052 -p1
 #mainline.patch.end
 
 #Serie.patch.start Clear Linux patches
