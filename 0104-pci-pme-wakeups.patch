@@ -1,7 +1,7 @@
-From 991308dc66ee8bc56ec426962df3b5e7f5d1dc06 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Arjan van de Ven <arjan@linux.intel.com>
 Date: Mon, 14 Mar 2016 11:10:58 -0600
-Subject: [PATCH 104/127] pci pme wakeups
+Subject: [PATCH] pci pme wakeups
 
 Reduce wakeups for PME checks, which are a workaround for miswired
 boards (sadly, too many of them) in laptops.
@@ -11,7 +11,7 @@ boards (sadly, too many of them) in laptops.
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/misc/vmw_balloon.c b/drivers/misc/vmw_balloon.c
-index 2543ef1ece17..bae978a63931 100644
+index 2543ef1..bae978a 100644
 --- a/drivers/misc/vmw_balloon.c
 +++ b/drivers/misc/vmw_balloon.c
 @@ -1061,7 +1061,7 @@ static void vmballoon_work(struct work_struct *work)
@@ -24,10 +24,10 @@ index 2543ef1ece17..bae978a63931 100644
  
  /*
 diff --git a/drivers/pci/pci.c b/drivers/pci/pci.c
-index afc4680c584f..a2a9f793c1fe 100644
+index 57a87a0..990fb54 100644
 --- a/drivers/pci/pci.c
 +++ b/drivers/pci/pci.c
-@@ -59,7 +59,7 @@ struct pci_pme_device {
+@@ -61,7 +61,7 @@ struct pci_pme_device {
  	struct pci_dev *dev;
  };
  
@@ -37,5 +37,5 @@ index afc4680c584f..a2a9f793c1fe 100644
  static void pci_dev_d3_sleep(struct pci_dev *dev)
  {
 -- 
-2.20.1
+https://clearlinux.org
 
