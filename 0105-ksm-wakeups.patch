@@ -12,7 +12,7 @@ Signed-off-by: Arjan van de Ven <arjan@linux.intel.com>
  2 files changed, 7 insertions(+), 3 deletions(-)
 
 diff --git a/kernel/watchdog.c b/kernel/watchdog.c
-index bbc4940..896a945 100644
+index 6d60701..72a44cb 100644
 --- a/kernel/watchdog.c
 +++ b/kernel/watchdog.c
 @@ -41,7 +41,7 @@ unsigned long __read_mostly watchdog_enabled;
