@@ -6,7 +6,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.106
-Release:        116
+Release:        117
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
