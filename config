@@ -4,7 +4,7 @@
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.2.1 20200220 gcc_9_2_0_release-646-gf55bf4ddbf
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.2.1 20200224 gcc_9_2_0_release-659-gf9be6e10c9
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=90201
@@ -568,8 +568,8 @@ CONFIG_PCIEASPM=y
 # CONFIG_PCIEASPM_DEBUG is not set
 # CONFIG_PCIEASPM_DEFAULT is not set
 # CONFIG_PCIEASPM_POWERSAVE is not set
-CONFIG_PCIEASPM_POWER_SUPERSAVE=y
-# CONFIG_PCIEASPM_PERFORMANCE is not set
+# CONFIG_PCIEASPM_POWER_SUPERSAVE is not set
+CONFIG_PCIEASPM_PERFORMANCE=y
 CONFIG_PCIE_PME=y
 # CONFIG_PCIE_DPC is not set
 # CONFIG_PCIE_PTM is not set
