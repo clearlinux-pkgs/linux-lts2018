@@ -71,6 +71,9 @@ Patch0124: 0124-use-lfence-instead-of-rep-and-nop.patch
 Patch0125: 0125-do-accept-in-LIFO-order-for-cache-efficiency.patch
 Patch0126: 0126-zero-extra-registers.patch
 Patch0127: 0127-locking-rwsem-spin-faster.patch
+Patch0128: 0128-ata-libahci-ignore-staggered-spin-up.patch
+Patch0129: 0129-print-CPU-that-faults.patch
+Patch0130: 0130-nvme-workaround.patch
 #Serie.end
 
 #Serie1.name WireGuard
@@ -167,6 +170,9 @@ Linux kernel build files
 %patch0125 -p1
 %patch0126 -p1
 %patch0127 -p1
+%patch0128 -p1
+%patch0129 -p1
+%patch0130 -p1
 #Serie.patch.end
 
 #Serie1.patch.start
