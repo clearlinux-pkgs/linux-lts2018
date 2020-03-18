@@ -40,7 +40,6 @@ Patch002: CVE-2019-19054.patch
 Patch0051: 0051-drm-i915-Redefine-some-Whiskey-Lake-SKUs.patch
 Patch0052: 0052-drm-i915-aml-Add-new-Amber-Lake-PCI-ID.patch
 Patch0053: 0053-wimax-i2400-fix-memory-leak.patch
-Patch0054: 0054-iwlwifi-mvm-Do-not-require-PHY_SKU-NVM-section-for-3.patch
 #mainline.end
 
 #Serie.clr 01XX: Clear Linux patches
@@ -139,7 +138,6 @@ Linux kernel build files
 %patch0051 -p1
 %patch0052 -p1
 %patch0053 -p1
-%patch0054 -p1
 #mainline.patch.end
 
 #Serie.patch.start Clear Linux patches
