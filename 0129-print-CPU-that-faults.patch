@@ -9,10 +9,10 @@ print cpu number when we print a crash
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/arch/x86/mm/fault.c b/arch/x86/mm/fault.c
-index 72e6fa1..7f43651 100644
+index c61acf6..5bece61 100644
 --- a/arch/x86/mm/fault.c
 +++ b/arch/x86/mm/fault.c
-@@ -824,9 +824,9 @@ show_signal_msg(struct pt_regs *regs, unsigned long error_code,
+@@ -846,9 +846,9 @@ show_signal_msg(struct pt_regs *regs, unsigned long error_code,
  	if (!printk_ratelimit())
  		return;
  
