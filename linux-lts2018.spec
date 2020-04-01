@@ -6,7 +6,7 @@
 
 Name:           linux-lts2018
 Version:        4.19.113
-Release:        127
+Release:        128
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -77,8 +77,8 @@ Patch0130: 0130-nvme-workaround.patch
 
 #Serie100.name WireGuard
 #Serie100.git  https://git.zx2c4.com/WireGuard
-#Serie100.cmt  edad0d6e99e5133b1e8e865d727a25fff6399cb4
-#Serie100.tag  0.0.20191219
+#Serie100.cmt  43f57dac7b8305024f83addc533c9eede6509129
+#Serie100.tag  v1.0.20200401
 Patch1001: 1001-WireGuard-fast-modern-secure-kernel-VPN-tunnel.patch
 #Serie100.end
 
