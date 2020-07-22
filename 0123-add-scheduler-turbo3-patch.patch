@@ -41,7 +41,7 @@ index d177940..865b105 100644
  	}
  }
 diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
-index 92b1e71..2aabcaa 100644
+index d8c249e..6becc41 100644
 --- a/kernel/sched/fair.c
 +++ b/kernel/sched/fair.c
 @@ -6430,6 +6430,10 @@ static int wake_cap(struct task_struct *p, int cpu, int prev_cpu)
