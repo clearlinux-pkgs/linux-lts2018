@@ -5,13 +5,13 @@
 #
 
 Name:           linux-lts2018
-Version:        4.19.141
-Release:        160
+Version:        4.19.142
+Release:        161
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.141.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.142.tar.xz
 Source1:        config
 Source2:        cmdline
 
@@ -125,7 +125,7 @@ Requires:       linux-lts2018-license = %{version}-%{release}
 Linux kernel build files
 
 %prep
-%setup -q -n linux-4.19.141
+%setup -q -n linux-4.19.142
 
 #cve.patch.start cve patches
 #cve.patch.end
