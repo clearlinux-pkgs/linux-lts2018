@@ -35,9 +35,6 @@ Requires: linux-lts2018-license = %{version}-%{release}
 #cve.end
 
 #mainline: Mainline patches, upstream backport and fixes from 0051 to 0099
-Patch0051: 0051-drm-i915-Redefine-some-Whiskey-Lake-SKUs.patch
-Patch0052: 0052-drm-i915-aml-Add-new-Amber-Lake-PCI-ID.patch
-Patch0053: 0053-wimax-i2400-fix-memory-leak.patch
 #mainline.end
 
 #Serie.clr 01XX: Clear Linux patches
@@ -131,9 +128,6 @@ Linux kernel build files
 #cve.patch.end
 
 #mainline.patch.start Mainline patches, upstream backport and fixes
-%patch0051 -p1
-%patch0052 -p1
-%patch0053 -p1
 #mainline.patch.end
 
 #Serie.patch.start Clear Linux patches
