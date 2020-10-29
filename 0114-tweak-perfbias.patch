@@ -8,7 +8,7 @@ Subject: [PATCH] tweak perfbias
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/arch/x86/kernel/cpu/intel.c b/arch/x86/kernel/cpu/intel.c
-index a5287b1..3cf4f46 100644
+index a5287b18a63f..3cf4f46677ed 100644
 --- a/arch/x86/kernel/cpu/intel.c
 +++ b/arch/x86/kernel/cpu/intel.c
 @@ -608,12 +608,12 @@ static void init_intel_energy_perf(struct cpuinfo_x86 *c)

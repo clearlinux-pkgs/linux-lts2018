@@ -11,7 +11,7 @@ boards (sadly, too many of them) in laptops.
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/misc/vmw_balloon.c b/drivers/misc/vmw_balloon.c
-index 2543ef1..bae978a 100644
+index 2543ef1ece17..bae978a63931 100644
 --- a/drivers/misc/vmw_balloon.c
 +++ b/drivers/misc/vmw_balloon.c
 @@ -1061,7 +1061,7 @@ static void vmballoon_work(struct work_struct *work)
@@ -24,7 +24,7 @@ index 2543ef1..bae978a 100644
  
  /*
 diff --git a/drivers/pci/pci.c b/drivers/pci/pci.c
-index 57a87a0..990fb54 100644
+index 57a87a001b4f..990fb547a511 100644
 --- a/drivers/pci/pci.c
 +++ b/drivers/pci/pci.c
 @@ -61,7 +61,7 @@ struct pci_pme_device {

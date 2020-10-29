@@ -17,7 +17,7 @@ Signed-off-by: Joe Konno <joe.konno@intel.com>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/ata/libahci.c b/drivers/ata/libahci.c
-index f1153e7..69b49b3 100644
+index f1153e7ba3b3..69b49b366426 100644
 --- a/drivers/ata/libahci.c
 +++ b/drivers/ata/libahci.c
 @@ -49,14 +49,14 @@
