@@ -41,10 +41,10 @@ index d177940aa090..865b105df730 100644
  	}
  }
 diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
-index 80392cdd5f3b..6a15784f9f20 100644
+index f06687053f96..ebc70145d697 100644
 --- a/kernel/sched/fair.c
 +++ b/kernel/sched/fair.c
-@@ -6430,6 +6430,10 @@ static int wake_cap(struct task_struct *p, int cpu, int prev_cpu)
+@@ -6431,6 +6431,10 @@ static int wake_cap(struct task_struct *p, int cpu, int prev_cpu)
   *
   * preempt must be disabled.
   */
@@ -55,7 +55,7 @@ index 80392cdd5f3b..6a15784f9f20 100644
  static int
  select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_flags)
  {
-@@ -6445,6 +6449,18 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
+@@ -6446,6 +6450,18 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
  			      && cpumask_test_cpu(cpu, &p->cpus_allowed);
  	}
  
