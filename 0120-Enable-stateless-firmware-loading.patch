@@ -11,7 +11,7 @@ firmware and distribution firmware.
  1 file changed, 2 insertions(+)
 
 diff --git a/drivers/base/firmware_loader/main.c b/drivers/base/firmware_loader/main.c
-index 8e9213b36e31..3fad4ceaaeb1 100644
+index 24410a0d6df0..99d1b4876f47 100644
 --- a/drivers/base/firmware_loader/main.c
 +++ b/drivers/base/firmware_loader/main.c
 @@ -278,6 +278,8 @@ static void free_fw_priv(struct fw_priv *fw_priv)
