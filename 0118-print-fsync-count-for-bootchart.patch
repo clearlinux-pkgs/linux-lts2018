@@ -36,10 +36,10 @@ index f92d5ae6d04e..aca690f330be 100644
  	/* Process credentials: */
  
 diff --git a/kernel/sched/debug.c b/kernel/sched/debug.c
-index 9518606fa1e5..98e3d018ebc9 100644
+index b1ef4f2e7edc..f7eea211bb03 100644
 --- a/kernel/sched/debug.c
 +++ b/kernel/sched/debug.c
-@@ -919,6 +919,7 @@ void proc_sched_show_task(struct task_struct *p, struct pid_namespace *ns,
+@@ -909,6 +909,7 @@ void proc_sched_show_task(struct task_struct *p, struct pid_namespace *ns,
  	PN(se.exec_start);
  	PN(se.vruntime);
  	PN(se.sum_exec_runtime);
