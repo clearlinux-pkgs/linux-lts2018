@@ -5,13 +5,13 @@
 #
 
 Name:           linux-lts2018
-Version:        4.19.260
-Release:        265
+Version:        4.19.261
+Release:        266
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.260.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.261.tar.xz
 Source1:        config
 Source2:        cmdline
 
@@ -121,7 +121,7 @@ Requires:       linux-lts2018-license = %{version}-%{release}
 Linux kernel build files
 
 %prep
-%setup -q -n linux-4.19.260
+%setup -q -n linux-4.19.261
 
 #cve.patch.start cve patches
 #cve.patch.end
