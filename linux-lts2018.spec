@@ -5,13 +5,13 @@
 #
 
 Name:           linux-lts2018
-Version:        4.19.273
-Release:        278
+Version:        4.19.274
+Release:        279
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.273.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.274.tar.xz
 Source1:        config
 Source2:        cmdline
 
@@ -121,7 +121,7 @@ Requires:       linux-lts2018-license = %{version}-%{release}
 Linux kernel build files
 
 %prep
-%setup -q -n linux-4.19.273
+%setup -q -n linux-4.19.274
 
 #cve.patch.start cve patches
 #cve.patch.end
